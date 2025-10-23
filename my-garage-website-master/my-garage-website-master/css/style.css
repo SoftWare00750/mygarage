@@ -4,7 +4,7 @@ grid-container {
 
 div.parent {
     width: 90%;
-    height: 100vh;
+    height: 90%;
     background-color: #262851;
     position: relative;
     overflow: hidden;
