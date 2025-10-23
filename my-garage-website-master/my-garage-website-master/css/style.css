@@ -133,7 +133,7 @@ div.parent section span.year {
     position: absolute;
     bottom: -190px;
     left: 125px;
-    margin-left: 100px;
+    margin-left: -200px;
     color: #22234a;
 }
 
