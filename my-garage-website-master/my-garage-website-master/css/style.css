@@ -1,6 +1,5 @@
 .grid-container {
     max-width: 1500px;
-    width: 70px
 }
 
 div.parent {
@@ -11,10 +10,15 @@ div.parent {
     overflow: hidden;
 }
 
+/* HEADER */
 div.parent header {
-    padding: 40px 0px;
+    padding: 40px 5%;
     position: relative;
     z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 div.parent header a.logo {
@@ -24,41 +28,18 @@ div.parent header a.logo {
     text-transform: lowercase;
     color: #fff;
     text-decoration: none;
-}
-
-div.parent header a.logo {
-    font-family: merriweather;
-    font-size: 25px;
-    font-weight: 600;
-    text-transform: lowercase;
-    color: #fff;
-    text-decoration: none;
-}
-
-div.parent header ul.nav li {
-    float: left;
-    list-style: none;
-}
-
-div.parent header ul.nav {
-    float: right;
-}
-
-div.parent header ul.nav li {
-    float: left;
-    list-style: none;
 }
 
 div.parent header ul.navigation {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end;
+    width: auto;
     margin-top: 10px;
-    float: right;
+    gap: 50px;
 }
 
 div.parent header ul.navigation li {
-    margin-right: 60px;
+    list-style: none;
 }
 
 div.parent header ul.navigation li a {
@@ -67,6 +48,7 @@ div.parent header ul.navigation li a {
     text-decoration: none;
     font-family: fira sans;
     font-size: 14px;
+    position: relative;
 }
 
 div.parent header ul.navigation li a:hover {
@@ -83,8 +65,14 @@ div.parent header ul.navigation li a:hover:after {
     background: #d71758;
 }
 
+/* SOCIAL ICONS */
+div.parent header ul.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
 div.parent header ul.social-icons li {
-    margin-left: 25px;
+    list-style: none;
 }
 
 div.parent header ul.social-icons li a {
@@ -109,22 +97,13 @@ div.parent header ul.social-icons li a:hover {
     border: 1px solid #4b4c68;
 }
 
-div.parent header ul.social-icons li:nth-child(1) a:hover {
-    color: #ec1c24;
-}
-
-div.parent header ul.social-icons li:nth-child(2) a:hover {
-    color: #00a8f3;
-}
-
-
-
-
-
-
-
+/* MAIN SECTION */
 div.parent section {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
 div.parent section span.year {
@@ -135,11 +114,14 @@ div.parent section span.year {
     bottom: -190px;
     left: 125px;
     color: #22234a;
+    z-index: 1;
 }
 
 div.parent section .car-details {
     position: relative;
-    top: 90px;
+    top: 40px;
+    z-index: 3;
+    flex: 1;
 }
 
 div.parent section .car-details h1.name {
@@ -180,7 +162,6 @@ div.parent section .car-details h4.production-year span {
     color: #fff;
 }
 
-
 div.parent section .car-details a.btn-discover {
     background-color: #d71758;
     border: 2px solid #fea500;
@@ -196,87 +177,26 @@ div.parent section .car-details a.btn-discover {
     align-items: center;
 }
 
-div.parent section .car-details a.btn-discover span {
-    padding-right: 5px;
-    position: relative;
-}
-
-div.parent section .car-details a.btn-discover i {
-    position: relative;
-}
-
-div.parent section .car-details a.btn-discover:after {
-    content: "";
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.20);
-    border: 2px solid #fff;
-}
-
-div.parent section .car-details a.btn-discover:hover span {
-    animation: anim-btn-discover-text 250ms linear forwards;
-}
-
-div.parent section .car-details a.btn-discover:hover i {
-    animation: anim-btn-discover-icon 250ms linear forwards;
-}
-
-div.parent section .car-details a.btn-discover:hover:after {
-    animation: anim-btn-discover-after 250ms linear forwards;
-}
-
-
-
-@keyframes anim-btn-discover-text {
-    from {
-        left: 0px;
-    }
-
-    to {
-        left: 10px;
-    }
-}
-
-@keyframes anim-btn-discover-icon {
-    from {
-        left: 0px;
-    }
-
-    to {
-        left: 24px;
-        transform: scale(2, 2);
-        color: #d71758;
-    }
-}
-
-@keyframes anim-btn-discover-after {
-    from {
-        background-color: rgba(255, 255, 255, 0.20);
-    }
-
-    to {
-        background-color: #fff;
-    }
-}
-
 div.parent section .car-pic {
     position: relative;
     z-index: 3;
-    top: 40px;
     right: 70px;
-    width: 1100px;
+    width: 900px;
+    flex-shrink: 0;
 }
 
 div.parent section .car-pic img {
-    width: 1000px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
 }
 
 div.parent section .navigate {
-    position: relative;
+    position: absolute;
+    bottom: 60px;
+    right: 5%;
     z-index: 3;
-    display: inline-flex;
-    float: right;
+    display: flex;
 }
 
 div.parent section .navigate button {
@@ -295,16 +215,6 @@ div.parent section .navigate button {
 div.parent section .navigate button:hover {
     color: #d71758;
     background-color: #fff;
-    border: 1px solid #4b4c68;
-}
-
-div.parent section .navigate .swiper-button-next,
-.swiper-button-prev {
-    background-image: none;
-    position: static;
-    top: 0;
-    margin-top: 0;
-    height: inherit;
 }
 
 div.parent .stripe {
@@ -313,17 +223,137 @@ div.parent .stripe {
     background-color: #fea500;
     bottom: 200px;
     left: 0;
-}
-
-div.parent .one {
-    width: 120%;
+    width: 140%;
     transform: rotate(145deg);
 }
 
-div.parent .two {
-    width: 145%;
-    transform: rotate(145deg);
+/* =============================
+   RESPONSIVE DESIGN 
+============================= */
+
+/* ✅ Laptops (1366px and smaller) */
+@media (max-width: 1366px) {
+    div.parent section span.year {
+        font-size: 40em;
+        bottom: -150px;
+        left: 80px;
+    }
+
+    div.parent section .car-details h1.name {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    div.parent section .car-details h1.name span {
+        font-size: 100px;
+    }
+
+    div.parent section .car-pic {
+        width: 750px;
+        right: 40px;
+        top: 20px;
+    }
+
+    div.parent section .car-details p.about {
+        width: 70%;
+        line-height: 28px;
+    }
+
+    div.parent .stripe {
+        height: 80px;
+        bottom: 160px;
+    }
 }
 
+/* ✅ Tablets (1024px and smaller) */
+@media (max-width: 1024px) {
+    div.parent section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
+    div.parent section .car-details {
+        top: 0;
+        width: 90%;
+    }
 
+    div.parent section .car-details h1.name {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    div.parent section .car-details h1.name span {
+        font-size: 80px;
+    }
+
+    div.parent section .car-details p.about {
+        width: 90%;
+        font-size: 13px;
+        line-height: 25px;
+        margin: 20px auto;
+    }
+
+    div.parent section .car-pic {
+        width: 600px;
+        margin-top: 40px;
+        right: 0;
+    }
+
+    div.parent section span.year {
+        font-size: 30em;
+        left: 40px;
+        bottom: -100px;
+    }
+
+    div.parent .stripe {
+        height: 70px;
+        bottom: 120px;
+    }
+}
+
+/* ✅ Phones (768px and smaller) */
+@media (max-width: 768px) {
+    div.parent header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    div.parent header ul.navigation {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    div.parent section .car-details h1.name {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    div.parent section .car-details h1.name span {
+        font-size: 55px;
+    }
+
+    div.parent section .car-pic {
+        width: 400px;
+        top: 20px;
+    }
+
+    div.parent section span.year {
+        font-size: 20em;
+        bottom: -60px;
+        left: 30px;
+    }
+
+    div.parent .stripe {
+        height: 50px;
+        bottom: 100px;
+    }
+
+    div.parent section .navigate button {
+        height: 50px;
+        width: 50px;
+        font-size: 13px;
+    }
+}
