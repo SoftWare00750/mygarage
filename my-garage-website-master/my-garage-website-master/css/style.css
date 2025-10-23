@@ -132,7 +132,8 @@ div.parent section span.year {
     font-family: dm serif display;
     position: absolute;
     bottom: -190px;
-    left: 110px;
+    left: 125px;
+    margin-left: 100px;
     color: #22234a;
 }
 
