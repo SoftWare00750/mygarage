@@ -1,148 +1,79 @@
-/* --- ORIGINAL CSS ABOVE --- */
+/* ============================= */
+/* RESPONSIVE FIT ADJUSTMENTS */
+/* ============================= */
 
-
-/* ========================================
-   ADJUSTMENTS FOR FULL VISIBILITY ON ALL LAPTOP SCREENS
-   ======================================== */
-
-/* 1️⃣ Allow parent to adapt to content height */
+/* Ensure all sections scale within the viewport */
 div.parent {
-    height: auto;
-    min-height: 100vh; /* still covers the screen initially */
-    overflow-y: auto; /* ensure contents fit without being clipped */
-    overflow-x: hidden; /* remove horizontal scroll */
-}
-
-/* 2️⃣ Scale large text and images on smaller screens */
-@media screen and (max-width: 1600px) {
-    div.parent section .car-details h1.name {
-        font-size: 60px;
-        line-height: 80px;
-    }
-
-    div.parent section .car-details h1.name span {
-        font-size: 90px;
-    }
-
-    div.parent section .car-details p.about {
-        width: 70%;
-        line-height: 30px;
-    }
-
-    div.parent section .car-pic {
-        width: 90%;
-        right: 0;
-        top: 30px;
-    }
-
-    div.parent section .car-pic img {
-        width: 100%;
-        max-width: 800px;
-    }
-
-    div.parent section span.year {
-        font-size: 35em;
-        bottom: -120px;
-        left: 80px;
-    }
-}
-
-/* 3️⃣ For mid-size laptops (1366px - 1440px) */
-@media screen and (max-width: 1440px) {
-    div.parent section .car-details h1.name {
-        font-size: 50px;
-        line-height: 70px;
-    }
-
-    div.parent section .car-details h1.name span {
-        font-size: 75px;
-    }
-
-    div.parent section .car-pic img {
-        max-width: 700px;
-    }
-
-    div.parent section span.year {
-        font-size: 30em;
-        bottom: -100px;
-        left: 70px;
-    }
-}
-
-/* 4️⃣ For small laptop screens (1200px and below) */
-@media screen and (max-width: 1200px) {
-    div.parent section .car-details {
-        top: 50px;
-    }
-
-    div.parent section .car-details h1.name {
-        font-size: 45px;
-        line-height: 60px;
-    }
-
-    div.parent section .car-details h1.name span {
-        font-size: 65px;
-    }
-
-    div.parent section .car-details p.about {
-        width: 80%;
-    }
-
-    div.parent section .car-pic {
-        top: 20px;
-        width: 85%;
-        margin: 0 auto;
-        right: 0;
-    }
-
-    div.parent section .car-pic img {
-        width: 100%;
-        max-width: 650px;
-    }
-
-    div.parent section span.year {
-        font-size: 25em;
-        bottom: -90px;
-        left: 50px;
-    }
-}
-
-/* 5️⃣ For 1024px width and smaller */
-@media screen and (max-width: 1024px) {
-    div.parent section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    div.parent section .car-details {
-        order: 1;
-        width: 90%;
-        top: 30px;
-    }
-
-    div.parent section .car-pic {
-        order: 2;
-        width: 90%;
-        top: 0;
-        right: 0;
-    }
-
-    div.parent section span.year {
-        display: none; /* hide huge background text on small laptops */
-    }
-}
-
-/* 6️⃣ Ensure navigation stays visible and non-overlapping */
-div.parent header {
-    position: sticky;
-    top: 0;
-    background-color: #262851;
-    z-index: 10;
-}
-
-/* 7️⃣ Prevent horizontal scrollbars from appearing anywhere */
-html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     overflow-x: hidden;
+}
+
+/* Scale everything proportionally on smaller screens */
+@media (max-width: 1600px) {
+    html {
+        transform: scale(0.95);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 1400px) {
+    html {
+        transform: scale(0.9);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        transform: scale(0.85);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        transform: scale(0.8);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        transform: scale(0.7);
+        transform-origin: top center;
+    }
+}
+
+/* Prevent scrollbars from appearing during scaling */
+body, html {
+    overflow-x: hidden;
+}
+
+/* Make large elements like car image auto-resize */
+div.parent section .car-pic img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure the year text doesn't overflow */
+div.parent section span.year {
+    font-size: 40vw; /* Responsive to viewport width */
+    left: 5vw;
+    bottom: -10vw;
+}
+
+/* Allow navigation items to wrap if necessary */
+div.parent header ul.navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Keep buttons visible on smaller screens */
+div.parent section .navigate {
+    flex-wrap: wrap;
+    justify-content: center;
 }
