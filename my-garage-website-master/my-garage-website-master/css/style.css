@@ -3,7 +3,7 @@ grid-container {
 }
 
 div.parent {
-    width: 100%;
+    width: 90%;
     height: 100vh;
     background-color: #262851;
     position: relative;
