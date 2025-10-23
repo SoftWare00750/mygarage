@@ -1,4 +1,4 @@
-.grid-container {
+grid-container {
     max-width: 1500px;
 }
 
@@ -10,15 +10,10 @@ div.parent {
     overflow: hidden;
 }
 
-/* HEADER */
 div.parent header {
-    padding: 40px 5%;
+    padding: 40px 0px;
     position: relative;
     z-index: 3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 div.parent header a.logo {
@@ -30,27 +25,105 @@ div.parent header a.logo {
     text-decoration: none;
 }
 
-div.parent header ul.nav li { float: left; list-style: none; } 
-div.parent header ul.nav { float: right; } 
-div.parent header ul.nav li { float: left; list-style: none; } 
-div.parent header ul.navigation { display: flex; justify-content: center; width: 100%; margin-top: 10px; float: right; } 
-div.parent header ul.navigation li { margin-right: 60px; } 
-div.parent header ul.navigation li a { color: rgba(255, 255, 255, 0.60); text-transform: capitalize; text-decoration: none; font-family: fira sans; font-size: 14px; } 
-div.parent header ul.navigation li a:hover { color: #fff; } 
-div.parent header ul.navigation li a:hover:after { content: ""; height: 6px; width: 6px; position: absolute; margin-left: 7px; border-radius: 50%; background: #d71758; } 
-div.parent header ul.social-icons li { margin-left: 25px; } 
-div.parent header ul.social-icons li a { color: #fff; text-decoration: none; font-size: 15px; height: 20px; width: 20px; border-radius: 50%; padding: 10px; display: flex; justify-content: center; align-items: center; background-color: #4b4c68; border: 1px solid #4b4c68; transition: all 250ms ease-in-out; } 
-div.parent header ul.social-icons li a:hover { color: #d71758; background-color: #fff; border: 1px solid #4b4c68; } 
-div.parent header ul.social-icons li:nth-child(1) a:hover { color: #ec1c24; } 
-div.parent header ul.social-icons li:nth-child(2) a:hover { color: #00a8f3; }
+div.parent header a.logo {
+    font-family: merriweather;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: lowercase;
+    color: #fff;
+    text-decoration: none;
+}
 
-/* MAIN SECTION */
+div.parent header ul.nav li {
+    float: left;
+    list-style: none;
+}
+
+div.parent header ul.nav {
+    float: right;
+}
+
+div.parent header ul.nav li {
+    float: left;
+    list-style: none;
+}
+
+div.parent header ul.navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    float: right;
+}
+
+div.parent header ul.navigation li {
+    margin-right: 60px;
+}
+
+div.parent header ul.navigation li a {
+    color: rgba(255, 255, 255, 0.60);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: fira sans;
+    font-size: 14px;
+}
+
+div.parent header ul.navigation li a:hover {
+    color: #fff;
+}
+
+div.parent header ul.navigation li a:hover:after {
+    content: "";
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    margin-left: 7px;
+    border-radius: 50%;
+    background: #d71758;
+}
+
+div.parent header ul.social-icons li {
+    margin-left: 25px;
+}
+
+div.parent header ul.social-icons li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b4c68;
+    border: 1px solid #4b4c68;
+    transition: all 250ms ease-in-out;
+}
+
+div.parent header ul.social-icons li a:hover {
+    color: #d71758;
+    background-color: #fff;
+    border: 1px solid #4b4c68;
+}
+
+div.parent header ul.social-icons li:nth-child(1) a:hover {
+    color: #ec1c24;
+}
+
+div.parent header ul.social-icons li:nth-child(2) a:hover {
+    color: #00a8f3;
+}
+
+
+
+
+
+
+
 div.parent section {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
 }
 
 div.parent section span.year {
@@ -61,14 +134,11 @@ div.parent section span.year {
     bottom: -190px;
     left: 125px;
     color: #22234a;
-    z-index: 1;
 }
 
 div.parent section .car-details {
     position: relative;
-    top: 40px;
-    z-index: 3;
-    flex: 1;
+    top: 90px;
 }
 
 div.parent section .car-details h1.name {
@@ -109,6 +179,7 @@ div.parent section .car-details h4.production-year span {
     color: #fff;
 }
 
+
 div.parent section .car-details a.btn-discover {
     background-color: #d71758;
     border: 2px solid #fea500;
@@ -124,26 +195,87 @@ div.parent section .car-details a.btn-discover {
     align-items: center;
 }
 
+div.parent section .car-details a.btn-discover span {
+    padding-right: 5px;
+    position: relative;
+}
+
+div.parent section .car-details a.btn-discover i {
+    position: relative;
+}
+
+div.parent section .car-details a.btn-discover:after {
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.20);
+    border: 2px solid #fff;
+}
+
+div.parent section .car-details a.btn-discover:hover span {
+    animation: anim-btn-discover-text 250ms linear forwards;
+}
+
+div.parent section .car-details a.btn-discover:hover i {
+    animation: anim-btn-discover-icon 250ms linear forwards;
+}
+
+div.parent section .car-details a.btn-discover:hover:after {
+    animation: anim-btn-discover-after 250ms linear forwards;
+}
+
+
+
+@keyframes anim-btn-discover-text {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 10px;
+    }
+}
+
+@keyframes anim-btn-discover-icon {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 24px;
+        transform: scale(2, 2);
+        color: #d71758;
+    }
+}
+
+@keyframes anim-btn-discover-after {
+    from {
+        background-color: rgba(255, 255, 255, 0.20);
+    }
+
+    to {
+        background-color: #fff;
+    }
+}
+
 div.parent section .car-pic {
     position: relative;
     z-index: 3;
+    top: 40px;
     right: 70px;
-    width: 900px;
-    flex-shrink: 0;
+    width: 1100px;
 }
 
 div.parent section .car-pic img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
+    width: 1000px;
 }
 
 div.parent section .navigate {
-    position: absolute;
-    bottom: 60px;
-    right: 5%;
+    position: relative;
     z-index: 3;
-    display: flex;
+    display: inline-flex;
+    float: right;
 }
 
 div.parent section .navigate button {
@@ -162,6 +294,16 @@ div.parent section .navigate button {
 div.parent section .navigate button:hover {
     color: #d71758;
     background-color: #fff;
+    border: 1px solid #4b4c68;
+}
+
+div.parent section .navigate .swiper-button-next,
+.swiper-button-prev {
+    background-image: none;
+    position: static;
+    top: 0;
+    margin-top: 0;
+    height: inherit;
 }
 
 div.parent .stripe {
@@ -170,7 +312,15 @@ div.parent .stripe {
     background-color: #fea500;
     bottom: 200px;
     left: 0;
-    width: 140%;
+}
+
+div.parent .one {
+    width: 120%;
+    transform: rotate(145deg);
+}
+
+div.parent .two {
+    width: 145%;
     transform: rotate(145deg);
 }
 
