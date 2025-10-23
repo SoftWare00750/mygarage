@@ -52,7 +52,7 @@ div.parent header ul.navigation {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 8px;
     float: right;
 }
 
@@ -148,7 +148,7 @@ div.parent section .car-details h1.name {
     font-family: dm serif display;
     font-weight: 600;
     text-transform: capitalize;
-    margin-bottom: -20px;
+    margin-bottom: -80px;
     line-height: 80px;
     color: #d71758;
 }
