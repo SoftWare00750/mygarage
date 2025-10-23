@@ -127,7 +127,7 @@ div.parent section {
 }
 
 div.parent section span.year {
-    font-size: 55em;
+    font-size: 48em;
     font-weight: 600;
     font-family: dm serif display;
     position: absolute;
@@ -140,6 +140,7 @@ div.parent section span.year {
 div.parent section .car-details {
     position: relative;
     top: 90px;
+    margin-top: 10px;
 }
 
 div.parent section .car-details h1.name {
