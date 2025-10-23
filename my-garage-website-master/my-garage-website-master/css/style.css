@@ -281,6 +281,7 @@ div.parent section .navigate {
     z-index: 3;
     display: inline-flex;
     float: right;
+    
 }
 
 div.parent section .navigate button {
@@ -294,6 +295,7 @@ div.parent section .navigate button {
     margin-left: 20px;
     cursor: pointer;
     transition: all 250ms ease-in-out;
+    margin-bottom:10px;
 }
 
 div.parent section .navigate button:hover {
