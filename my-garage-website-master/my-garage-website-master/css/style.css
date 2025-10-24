@@ -266,7 +266,7 @@ div.parent section .car-details a.btn-discover:hover:after {
 }
 
 div.parent section .car-pic {
-    position: relative;
+    position: absolute;
     z-index: 3;
     top: 100px;
     right: 20px;
