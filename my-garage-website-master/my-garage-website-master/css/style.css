@@ -148,7 +148,7 @@ div.parent section .car-details h1.name {
     font-family: dm serif display;
     font-weight: 600;
     text-transform: capitalize;
-    margin-bottom: 10px;
+    margin-bottom: -20px;
     line-height: 100px;
     color: #d71758;
 }
