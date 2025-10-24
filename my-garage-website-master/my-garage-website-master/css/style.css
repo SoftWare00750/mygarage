@@ -266,7 +266,7 @@ div.parent section .car-details a.btn-discover:hover:after {
 }
 
 div.parent section .car-pic {
-    position: absolute;
+    position: relative;
     z-index: 3;
     top: 100px;
     right: 20px;
@@ -276,7 +276,7 @@ div.parent section .car-pic {
 }
 
 div.parent section .car-pic img {
-    width: 740px;
+    width: 720px;
 }
 
 div.parent section .navigate {
