@@ -295,7 +295,7 @@ div.parent section .navigate button {
     margin-left: 20px;
     cursor: pointer;
     transition: all 250ms ease-in-out;
-    margin-top: -10px;
+    
 }
 
 div.parent section .navigate button:hover {
