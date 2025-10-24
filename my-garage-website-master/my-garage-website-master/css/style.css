@@ -131,7 +131,7 @@ div.parent section span.year {
     font-weight: 600;
     font-family: dm serif display;
     position: absolute;
-    bottom: -190px;
+    bottom: -80px;
     left: 125px;
     margin-left: -200px;
     color: #22234a;
@@ -155,7 +155,7 @@ div.parent section .car-details h1.name {
 }
 
 div.parent section .car-details h1.name span {
-    font-size: 116px;
+    font-size: 112px;
     color: #fff;
 }
 
