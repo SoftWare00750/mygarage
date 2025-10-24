@@ -272,7 +272,7 @@ div.parent section .car-pic {
     right: 70px;
     margin-right: -80px;
     width: 800px;
-    margin-top: -20px;
+   margin-bottom: 10px;
 }
 
 div.parent section .car-pic img {
