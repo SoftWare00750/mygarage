@@ -164,8 +164,8 @@ div.parent section .car-details p.about {
     width: 60%;
     font-family: open sans;
     line-height: 35px;
-    margin-bottom: 40px;
-    margin-top: -20px;
+    margin-bottom: 80px;
+    margin-top: 10px;
 }
 
 div.parent section .car-details h4.production-year {
