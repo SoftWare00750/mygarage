@@ -270,12 +270,12 @@ div.parent section .car-pic {
     z-index: 3;
     top: 100px;
     right: 70px;
-    width: 600px;
+    width: 800px;
     margin-top: -40px;
 }
 
 div.parent section .car-pic img {
-    width: 800px;
+    width: 600px;
 }
 
 div.parent section .navigate {
