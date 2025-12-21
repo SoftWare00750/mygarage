@@ -130,157 +130,179 @@
     
     /* ========== HEADER - FIXED LAYOUT ========== */
     div.parent header {
-        padding: 20px 0 15px;
+        padding: 15px 0 10px !important;
         width: 100%;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 100 !important;
+        background-color: rgba(38, 40, 81, 0.95) !important;
+        backdrop-filter: blur(10px);
     }
     
     div.parent header .grid-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
+        width: 100% !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        position: relative !important;
+        padding: 0 20px !important;
     }
     
     /* Logo - Left */
     div.parent header .grid-20:first-child {
-        width: auto;
-        flex: 0 0 auto;
-        text-align: left;
-        order: 1;
-        padding: 0;
-        margin: 0;
+        width: auto !important;
+        flex: 0 0 auto !important;
+        text-align: left !important;
+        order: 1 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        float: none !important;
     }
     
     div.parent header a.logo {
-        font-family: merriweather, serif;
-        font-size: 20px;
-        font-weight: 600;
-        text-transform: lowercase;
-        color: #fff;
-        text-decoration: none;
-        display: inline-block;
+        font-family: merriweather, serif !important;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        text-transform: lowercase !important;
+        color: #fff !important;
+        text-decoration: none !important;
+        display: inline-block !important;
     }
     
     /* Social Icons - Right (BESIDE LOGO) */
     div.parent header .grid-20:last-child {
-        width: auto;
-        flex: 0 0 auto;
-        order: 2;
-        padding: 0;
-        margin: 0;
+        width: auto !important;
+        flex: 0 0 auto !important;
+        order: 2 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        float: none !important;
     }
     
     div.parent header ul.social-icons {
-        display: flex;
-        gap: 10px;
-        margin: 0;
-        padding: 0;
-        float: none;
+        display: flex !important;
+        gap: 10px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        float: none !important;
+        list-style: none !important;
     }
     
     div.parent header ul.social-icons li {
-        margin: 0;
-        list-style: none;
-        float: none;
+        margin: 0 !important;
+        margin-left: 0 !important;
+        list-style: none !important;
+        float: none !important;
     }
     
     div.parent header ul.social-icons li a {
-        color: #fff;
-        font-size: 13px;
-        height: 38px;
-        width: 38px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #4b4c68;
-        border: 1px solid #4b4c68;
-        transition: all 250ms ease-in-out;
+        color: #fff !important;
+        font-size: 13px !important;
+        height: 38px !important;
+        width: 38px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background-color: #4b4c68 !important;
+        border: 1px solid #4b4c68 !important;
+        transition: all 250ms ease-in-out !important;
     }
     
     div.parent header ul.social-icons li a:hover {
-        color: #d71758;
-        background-color: #fff;
+        color: #d71758 !important;
+        background-color: #fff !important;
     }
     
     div.parent header ul.social-icons li:nth-child(1) a:hover {
-        color: #ec1c24;
+        color: #ec1c24 !important;
     }
     
     div.parent header ul.social-icons li:nth-child(2) a:hover {
-        color: #00a8f3;
+        color: #00a8f3 !important;
     }
     
     /* Navigation - Full Width Below, STRAIGHT LINE */
     div.parent header .grid-60 {
-        width: 100%;
-        order: 3;
-        margin-top: 15px;
-        padding: 0;
+        width: 100% !important;
+        order: 3 !important;
+        margin-top: 12px !important;
+        padding: 0 !important;
+        float: none !important;
     }
     
     div.parent header ul.nav {
-        width: 100%;
-        float: none;
-        margin: 0;
-        padding: 0;
+        width: 100% !important;
+        float: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     
     div.parent header ul.navigation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: 15px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        gap: 15px !important;
+        margin: 0 !important;
+        margin-top: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+        float: none !important;
     }
     
     div.parent header ul.navigation::-webkit-scrollbar {
-        display: none;
+        display: none !important;
     }
     
     div.parent header ul.navigation li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        float: none;
-        flex-shrink: 0;
+        margin: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        float: none !important;
+        flex-shrink: 0 !important;
     }
     
     div.parent header ul.navigation li a {
-        color: rgba(255, 255, 255, 0.60);
-        text-transform: capitalize;
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 12px;
-        padding: 6px 10px;
-        text-decoration: none;
-        white-space: nowrap;
-        display: inline-block;
-        transition: color 0.3s ease;
+        color: rgba(255, 255, 255, 0.60) !important;
+        text-transform: capitalize !important;
+        font-family: 'Fira Sans', sans-serif !important;
+        font-size: 12px !important;
+        padding: 6px 10px !important;
+        text-decoration: none !important;
+        white-space: nowrap !important;
+        display: inline-block !important;
+        transition: color 0.3s ease !important;
     }
     
     div.parent header ul.navigation li a:hover {
-        color: #fff;
+        color: #fff !important;
     }
     
-    /* ========== SECTION - MOVED HIGHER ========== */
+    div.parent header ul.navigation li a:hover:after {
+        content: none !important;
+    }
+    
+    /* ========== SECTION - MOVED MUCH HIGHER ========== */
     div.parent section {
-        position: relative;
-        padding: 5px 0 40px;
-        text-align: center;
-        width: 100%;
-        overflow: hidden;
-        min-height: auto;
-        margin-top: -10px;
+        position: relative !important;
+        padding: 0 !important;
+        padding-top: 120px !important;
+        padding-bottom: 30px !important;
+        text-align: center !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        min-height: auto !important;
+        margin-top: 0 !important;
     }
     
     div.parent section .grid-container {
@@ -302,19 +324,19 @@
         position: static !important;
     }
     
-    /* Year Background - HIGHER POSITION */
+    /* Year Background - MUCH HIGHER POSITION */
     div.parent section span.year {
-        font-size: 5em;
-        font-weight: 600;
-        font-family: 'DM Serif Display', serif;
-        position: absolute;
-        bottom: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #22234a;
-        z-index: 1;
-        opacity: 0.4;
-        margin: 0;
+        font-size: 5em !important;
+        font-weight: 600 !important;
+        font-family: 'DM Serif Display', serif !important;
+        position: absolute !important;
+        bottom: 150px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        color: #22234a !important;
+        z-index: 1 !important;
+        opacity: 0.4 !important;
+        margin: 0 !important;
     }
     
     /* ORDER 1: Car Image - Centered and Higher */
@@ -562,14 +584,14 @@
         to { background-color: #fff; }
     }
     
-    /* Stripes - HIGHER POSITION */
+    /* Stripes - MUCH HIGHER POSITION */
     div.parent .stripe {
-        height: 35px;
-        position: absolute;
-        background-color: #fea500;
-        bottom: 90px;
-        left: 0;
-        z-index: 0;
+        height: 35px !important;
+        position: absolute !important;
+        background-color: #fea500 !important;
+        bottom: 150px !important;
+        left: 0 !important;
+        z-index: 0 !important;
     }
     
     div.parent .one {
@@ -613,8 +635,8 @@
     }
 
     div.parent section span.year {
-        font-size: 4.5em;
-        bottom: 75px;
+        font-size: 4.5em !important;
+        bottom: 140px !important;
     }
 }
 
@@ -677,8 +699,8 @@
     }
 
     div.parent section span.year {
-        font-size: 4em;
-        bottom: 70px;
+        font-size: 4em !important;
+        bottom: 130px !important;
     }
 }
 
@@ -705,8 +727,8 @@
     }
 
     div.parent section span.year {
-        font-size: 3.5em;
-        bottom: 65px;
+        font-size: 3.5em !important;
+        bottom: 120px !important;
     }
 }
 
