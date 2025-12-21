@@ -69,10 +69,20 @@
     
     div.parent section {
         text-align: center;
+        padding-top: 40px;
     }
     
     div.parent section .car-pic {
         margin: 0 auto;
+    }
+
+    /* Move elements higher */
+    div.parent section span.year {
+        bottom: 80px;
+    }
+
+    div.parent section .grid-container {
+        margin-top: -40px;
     }
 }
 
@@ -118,7 +128,7 @@
         overflow: hidden;
     }
     
-    /* ========== HEADER ========== */
+    /* ========== HEADER - FIXED LAYOUT ========== */
     div.parent header {
         padding: 20px 0 15px;
         width: 100%;
@@ -129,7 +139,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         position: relative;
     }
     
@@ -153,7 +163,7 @@
         display: inline-block;
     }
     
-    /* Social Icons - Right */
+    /* Social Icons - Right (BESIDE LOGO) */
     div.parent header .grid-20:last-child {
         width: auto;
         flex: 0 0 auto;
@@ -203,7 +213,7 @@
         color: #00a8f3;
     }
     
-    /* Navigation - Full Width Below, Single Line */
+    /* Navigation - Full Width Below, STRAIGHT LINE */
     div.parent header .grid-60 {
         width: 100%;
         order: 3;
@@ -262,14 +272,15 @@
         color: #fff;
     }
     
-    /* ========== SECTION - FIT IN ONE SCREEN ========== */
+    /* ========== SECTION - MOVED HIGHER ========== */
     div.parent section {
         position: relative;
-        padding: 20px 0 40px;
+        padding: 5px 0 40px;
         text-align: center;
         width: 100%;
         overflow: hidden;
         min-height: auto;
+        margin-top: -10px;
     }
     
     div.parent section .grid-container {
@@ -291,13 +302,13 @@
         position: static !important;
     }
     
-    /* Year Background - Move Up */
+    /* Year Background - HIGHER POSITION */
     div.parent section span.year {
         font-size: 5em;
         font-weight: 600;
         font-family: 'DM Serif Display', serif;
         position: absolute;
-        bottom: 30px;
+        bottom: 80px;
         left: 50%;
         transform: translateX(-50%);
         color: #22234a;
@@ -306,11 +317,12 @@
         margin: 0;
     }
     
-    /* ORDER 1: Car Image - Centered and Left */
+    /* ORDER 1: Car Image - Centered and Higher */
     div.parent section .grid-55 {
         order: 1;
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        margin-top: -15px;
     }
     
     div.parent section .car-pic {
@@ -318,12 +330,13 @@
         z-index: 3;
         margin: 0 auto !important;
         width: 100% !important;
-        max-width: 240px !important;
+        max-width: 260px !important;
         text-align: center !important;
         top: 0 !important;
         right: 0 !important;
         left: 0 !important;
         transform: none !important;
+        touch-action: pan-y pinch-zoom;
     }
     
     div.parent section .car-pic .swiper-container {
@@ -331,6 +344,12 @@
         max-width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
+        touch-action: pan-y pinch-zoom;
+        cursor: grab;
+    }
+
+    div.parent section .car-pic .swiper-container:active {
+        cursor: grabbing;
     }
     
     div.parent section .car-pic .swiper-wrapper {
@@ -346,7 +365,7 @@
     
     div.parent section .car-pic img {
         width: 100% !important;
-        max-width: 240px !important;
+        max-width: 260px !important;
         height: auto !important;
         margin: 0 auto !important;
         display: block !important;
@@ -354,6 +373,8 @@
         box-shadow: none !important;
         border: none !important;
         position: relative !important;
+        user-select: none;
+        -webkit-user-drag: none;
     }
     
     /* ORDER 2: Slider Buttons - Right Under Image */
@@ -363,7 +384,7 @@
         display: flex !important;
         justify-content: center !important;
         gap: 18px !important;
-        margin: 10px auto 15px !important;
+        margin: 10px auto 12px !important;
         order: 2;
         float: none !important;
         width: 100% !important;
@@ -402,11 +423,12 @@
         top: 0 !important;
     }
     
-    /* ORDER 3: Car Details */
+    /* ORDER 3: Car Details - HIGHER POSITION */
     div.parent section .grid-45 {
         order: 3;
         width: 100%;
         margin: 0;
+        margin-top: -5px;
     }
     
     div.parent section .car-details {
@@ -421,11 +443,17 @@
     div.parent section .car-details .swiper-container {
         margin: 0;
         padding: 0;
+        touch-action: pan-y pinch-zoom;
+        cursor: grab;
+    }
+
+    div.parent section .car-details .swiper-container:active {
+        cursor: grabbing;
     }
     
     /* Car Name */
     div.parent section .car-details h1.name {
-        font-size: 24px;
+        font-size: 26px;
         font-family: 'DM Serif Display', serif;
         font-weight: 600;
         text-transform: capitalize;
@@ -436,7 +464,7 @@
     }
     
     div.parent section .car-details h1.name span {
-        font-size: 36px;
+        font-size: 38px;
         color: #fff;
         display: block;
     }
@@ -534,12 +562,12 @@
         to { background-color: #fff; }
     }
     
-    /* Stripes - Move Up */
+    /* Stripes - HIGHER POSITION */
     div.parent .stripe {
         height: 35px;
         position: absolute;
         background-color: #fea500;
-        bottom: 50px;
+        bottom: 90px;
         left: 0;
         z-index: 0;
     }
@@ -577,11 +605,16 @@
     }
     
     div.parent section .car-pic {
-        max-width: 220px !important;
+        max-width: 240px !important;
     }
     
     div.parent section .car-pic img {
-        max-width: 220px !important;
+        max-width: 240px !important;
+    }
+
+    div.parent section span.year {
+        font-size: 4.5em;
+        bottom: 75px;
     }
 }
 
@@ -623,11 +656,11 @@
     }
     
     div.parent section .car-pic {
-        max-width: 200px !important;
+        max-width: 220px !important;
     }
     
     div.parent section .car-pic img {
-        max-width: 200px !important;
+        max-width: 220px !important;
     }
     
     div.parent section .navigate button {
@@ -636,11 +669,16 @@
     }
     
     div.parent section .car-details h1.name {
-        font-size: 22px;
+        font-size: 24px;
     }
     
     div.parent section .car-details h1.name span {
-        font-size: 34px;
+        font-size: 36px;
+    }
+
+    div.parent section span.year {
+        font-size: 4em;
+        bottom: 70px;
     }
 }
 
@@ -659,16 +697,21 @@
     }
     
     div.parent section .car-pic {
-        max-width: 180px !important;
+        max-width: 200px !important;
     }
     
     div.parent section .car-pic img {
-        max-width: 180px !important;
+        max-width: 200px !important;
+    }
+
+    div.parent section span.year {
+        font-size: 3.5em;
+        bottom: 65px;
     }
 }
 
 /* =============================
-   SWIPER FIX
+   SWIPER TOUCH INTERACTION FIX
 ============================= */
 
 @media only screen and (max-width: 1023px) {
@@ -679,6 +722,8 @@
         margin: 0 !important;
         padding: 0 !important;
         position: relative !important;
+        /* Enable touch sliding */
+        touch-action: pan-y pinch-zoom !important;
     }
     
     .swiper-wrapper {
