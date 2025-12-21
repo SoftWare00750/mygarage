@@ -160,6 +160,7 @@
         padding: 0 !important;
         margin: 0 !important;
         float: none !important;
+        margin-right: 5px;;
     }
     
     div.parent header a.logo {
@@ -227,7 +228,7 @@
     
     /* Navigation - Full Width Below, STRAIGHT LINE */
     div.parent header .grid-60 {
-        width: 100% !important;
+        width: 70% !important;
         order: 3 !important;
         margin-top: 12px !important;
         padding: 0 !important;
@@ -330,7 +331,7 @@
         font-weight: 600 !important;
         font-family: 'DM Serif Display', serif !important;
         position: absolute !important;
-        bottom: 150px !important;
+        top: 150px !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
         color: #22234a !important;
@@ -363,6 +364,7 @@
     
     div.parent section .car-pic .swiper-container {
         width: 100% !important;
+        
         max-width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
@@ -417,8 +419,8 @@
     div.parent section .navigate button {
         color: #fff;
         font-size: 12px;
-        height: 44px !important;
-        width: 44px !important;
+        height: 50px !important;
+        width: 50px !important;
         border-radius: 50%;
         background-color: #4b4c68;
         border: 1px solid #4b4c68;
@@ -450,7 +452,7 @@
         order: 3;
         width: 100%;
         margin: 0;
-        margin-top: -5px;
+        margin-top: -4px;
     }
     
     div.parent section .car-details {
@@ -505,7 +507,7 @@
     
     /* Production Year */
     div.parent section .car-details h4.production-year {
-        font-size: 11px;
+        font-size: 10px;
         font-family: 'Mada', sans-serif;
         line-height: 1.4;
         color: rgba(255, 255, 255, 0.50);
@@ -524,8 +526,8 @@
     div.parent section .car-details a.btn-discover {
         background-color: #d71758;
         border: 2px solid #fea500;
-        padding: 8px 12px 8px 18px;
-        border-radius: 30px;
+        padding: 7px 11px 7px 17px;
+        border-radius: 20px;
         font-family: 'Mada', sans-serif;
         text-decoration: none;
         text-transform: uppercase;
