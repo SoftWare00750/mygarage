@@ -1,814 +1,220 @@
-/* =============================
-   MOBILE & TABLET RESPONSIVE CSS
-   Clean Layout - Everything Visible
-============================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Garage</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/responsive-mobile.css">
+    <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-/* =============================
-   FIX WONKY LAYOUT - ROOT CAUSE
-============================= */
+    <div class="parent">
+        <header>
+            <div class="grid-container">
+                <div class="grid-20">
+                    <a href="#" class="logo">mygarage</a>
+                </div>
+                <div class="grid-60">
+                    <ul class="nav navigation">
+                        <li><a href="#">cars</a></li>
+                        <li><a href="#">history</a></li>
+                        <li><a href="#">technology</a></li>
+                        <li><a href="#">production</a></li>
+                        <li><a href="#">reviews</a></li>
+                    </ul>
+                </div>
+                <div class="grid-20">
+                    <ul class="nav social-icons">
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
-@media only screen and (max-width: 1023px) {
-    /* Remove any existing positioning that causes issues */
-    div.parent section .car-pic {
-        position: relative !important;
-        top: 0 !important;
-        right: 0 !important;
-        left: 0 !important;
-        margin-right: 0 !important;
-        width: 100% !important;
-    }
-    
-    /* Remove yellow background on images */
-    div.parent section .car-pic img {
-        background: transparent !important;
-        box-shadow: none !important;
-        border: none !important;
-    }
-    
-    /* Fix any absolute positioning issues */
-    div.parent section {
-        position: relative !important;
-    }
-    
-    /* Ensure grid doesn't float */
-    [class*="grid-"] {
-        float: none !important;
-        clear: both !important;
-    }
-}
+        <section>
+            <span class="year">1985</span>
+            <div class="grid-container">
+                <div class="grid-45">
+                    <div class="car-details">
+                        <div class="swiper-container swiper-details">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h1 class="name">
+                                        chevrolet <br>
+                                        <span>camaro</span>
+                                    </h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1 class="name">
+                                        Land rover <br>
+                                        <span>defender</span>
+                                    </h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1 class="name">
+                                        Dodge <br>
+                                        <span>challenger</span>
+                                    </h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1 class="name">
+                                        ford <br>
+                                        <span>mustang</span>
+                                    </h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1 class="name">
+                                        porsche <br>
+                                        <span>cayenne</span>
+                                    </h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1 class="name">
+                                        range rover <br>
+                                        <span>sport</span>
+                                    </h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1 class="name">
+                                        mercedes <br>
+                                        <span>g-wagon</span>
+                                    </h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1 class="name">
+                                        nissan <br>
+                                        <span>skyline</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="about">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nemo earum veniam, molestiae amet eum quo saepe eos, sunt et eligendi fugiat voluptate! Id dolores natus laboriosam? Error, facere excepturi?
+                        </p>
+                        <h4 class="production-year">
+                            Production <br> <span>2000 - 2012</span>
+                        </h4>
+                        <a href="#" class="btn-discover">
+                            <span>discover</span>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-55">
+                    <div class="car-pic">
+                        <div class="swiper-container swiper-images">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/white-chevy.png" alt="Chevrolet Camaro">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/grey-defender.png" alt="Land Rover Defender">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/red-dodge.png" alt="Dodge Challenger">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/black-mustang.png" alt="Ford Mustang">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/yellow-porsche.png" alt="Porsche Cayenne">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/navy-range.png" alt="Range Rover Sport">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/grey-gwagon.png" alt="Mercedes G-Wagon">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/black-skyline.png" alt="Nissan Skyline">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="navigate">
+                        <button class="swiper-button-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="swiper-button-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* =============================
-   TABLET (768px - 1023px)
-============================= */
+        <div class="stripe one"></div>
+        <div class="stripe two"></div>
+    </div>
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    html, body {
-        overflow-x: hidden;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    div.parent {
-        width: 100%;
-        min-height: 100vh;
-        overflow-x: hidden;
-    }
-    
-    .grid-container {
-        max-width: 100%;
-        padding: 0 30px;
-    }
-    
-    div.parent header .grid-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    div.parent section {
-        text-align: center;
-        padding-top: 40px;
-    }
-    
-    div.parent section .car-pic {
-        margin: 0 auto;
-    }
 
-    /* Move elements higher */
-    div.parent section span.year {
-        bottom: 80px;
-    }
+    <script src="js/swiper.min.js"></script>
 
-    div.parent section .grid-container {
-        margin-top: -40px;
-    }
-}
+    <script>
+        // Initialize the images swiper with touch support
+        var swiperImages = new Swiper('.swiper-images', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            spaceBetween: 200,
+            // Enable touch gestures
+            touchRatio: 1,
+            touchAngle: 45,
+            grabCursor: true,
+            simulateTouch: true,
+            touchStartPreventDefault: false,
+            // Swipe threshold
+            threshold: 10,
+            // Resistance
+            resistanceRatio: 0.85,
+            // Enable keyboard control
+            keyboard: {
+                enabled: true,
+            },
+            // Smooth transitions
+            speed: 600,
+            effect: 'slide',
+        });
 
-/* =============================
-   MOBILE (up to 767px)
-============================= */
+        // Initialize the details swiper with same settings
+        var swiperDetails = new Swiper('.swiper-details', {
+            loop: true,
+            spaceBetween: 200,
+            // Enable touch gestures
+            touchRatio: 1,
+            touchAngle: 45,
+            grabCursor: true,
+            simulateTouch: true,
+            touchStartPreventDefault: false,
+            threshold: 10,
+            resistanceRatio: 0.85,
+            keyboard: {
+                enabled: true,
+            },
+            speed: 600,
+            effect: 'slide',
+        });
 
-@media only screen and (max-width: 767px) {
-    * {
-        box-sizing: border-box;
-    }
-    
-    html {
-        overflow-x: hidden;
-        width: 100%;
-    }
-    
-    body {
-        overflow-x: hidden;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    div.parent {
-        width: 100%;
-        min-height: 100vh;
-        background-color: #262851;
-        background-image: url('assets/background.jpg');
-        background-position: center top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        overflow-x: hidden;
-        position: relative;
-    }
-    
-    .grid-container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 20px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-    
-    /* ========== HEADER - FIXED LAYOUT ========== */
-    div.parent header {
-        padding: 15px 0 10px !important;
-        width: 100%;
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        z-index: 100 !important;
-        background-color: rgba(38, 40, 81, 0.95) !important;
-        backdrop-filter: blur(10px);
-    }
-    
-    div.parent header .grid-container {
-        width: 100% !important;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        position: relative !important;
-        padding: 0 20px !important;
-    }
-    
-    /* Logo - Left */
-    div.parent header .grid-20:first-child {
-        width: auto !important;
-        flex: 0 0 auto !important;
-        text-align: left !important;
-        order: 1 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        float: none !important;
-    }
-    
-    div.parent header a.logo {
-        font-family: merriweather, serif !important;
-        font-size: 20px !important;
-        font-weight: 600 !important;
-        text-transform: lowercase !important;
-        color: #fff !important;
-        text-decoration: none !important;
-        display: inline-block !important;
-    }
-    
-    /* Social Icons - Right (BESIDE LOGO) */
-    div.parent header .grid-20:last-child {
-        width: auto !important;
-        flex: 0 0 auto !important;
-        order: 2 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        float: none !important;
-    }
-    
-    div.parent header ul.social-icons {
-        display: flex !important;
-        gap: 10px !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        float: none !important;
-        list-style: none !important;
-    }
-    
-    div.parent header ul.social-icons li {
-        margin: 0 !important;
-        margin-left: 0 !important;
-        list-style: none !important;
-        float: none !important;
-    }
-    
-    div.parent header ul.social-icons li a {
-        color: #fff !important;
-        font-size: 13px !important;
-        height: 38px !important;
-        width: 38px !important;
-        border-radius: 50% !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        background-color: #4b4c68 !important;
-        border: 1px solid #4b4c68 !important;
-        transition: all 250ms ease-in-out !important;
-    }
-    
-    div.parent header ul.social-icons li a:hover {
-        color: #d71758 !important;
-        background-color: #fff !important;
-    }
-    
-    div.parent header ul.social-icons li:nth-child(1) a:hover {
-        color: #ec1c24 !important;
-    }
-    
-    div.parent header ul.social-icons li:nth-child(2) a:hover {
-        color: #00a8f3 !important;
-    }
-    
-    /* Navigation - Full Width Below, STRAIGHT LINE */
-    div.parent header .grid-60 {
-        width: 100% !important;
-        order: 3 !important;
-        margin-top: 12px !important;
-        padding: 0 !important;
-        float: none !important;
-    }
-    
-    div.parent header ul.nav {
-        width: 100% !important;
-        float: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    
-    div.parent header ul.navigation {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        flex-wrap: nowrap !important;
-        gap: 15px !important;
-        margin: 0 !important;
-        margin-top: 0 !important;
-        padding: 0 !important;
-        list-style: none !important;
-        width: 100% !important;
-        overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-        scrollbar-width: none !important;
-        -ms-overflow-style: none !important;
-        float: none !important;
-    }
-    
-    div.parent header ul.navigation::-webkit-scrollbar {
-        display: none !important;
-    }
-    
-    div.parent header ul.navigation li {
-        margin: 0 !important;
-        margin-right: 0 !important;
-        padding: 0 !important;
-        list-style: none !important;
-        float: none !important;
-        flex-shrink: 0 !important;
-    }
-    
-    div.parent header ul.navigation li a {
-        color: rgba(255, 255, 255, 0.60) !important;
-        text-transform: capitalize !important;
-        font-family: 'Fira Sans', sans-serif !important;
-        font-size: 12px !important;
-        padding: 6px 10px !important;
-        text-decoration: none !important;
-        white-space: nowrap !important;
-        display: inline-block !important;
-        transition: color 0.3s ease !important;
-    }
-    
-    div.parent header ul.navigation li a:hover {
-        color: #fff !important;
-    }
-    
-    div.parent header ul.navigation li a:hover:after {
-        content: none !important;
-    }
-    
-    /* ========== SECTION - MOVED MUCH HIGHER ========== */
-    div.parent section {
-        position: relative !important;
-        padding: 0 !important;
-        padding-top: 120px !important;
-        padding-bottom: 30px !important;
-        text-align: center !important;
-        width: 100% !important;
-        overflow: hidden !important;
-        min-height: auto !important;
-        margin-top: 0 !important;
-    }
-    
-    div.parent section .grid-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 20px;
-        overflow: hidden;
-    }
-    
-    /* All grids full width */
-    div.parent section .grid-45,
-    div.parent section .grid-55 {
-        width: 100% !important;
-        float: none !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        position: static !important;
-    }
-    
-    /* Year Background - MUCH HIGHER POSITION */
-    div.parent section span.year {
-        font-size: 5em !important;
-        font-weight: 600 !important;
-        font-family: 'DM Serif Display', serif !important;
-        position: absolute !important;
-        bottom: 150px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        color: #22234a !important;
-        z-index: 1 !important;
-        opacity: 0.4 !important;
-        margin: 0 !important;
-    }
-    
-    /* ORDER 1: Car Image - Centered and Higher */
-    div.parent section .grid-55 {
-        order: 1;
-        width: 100%;
-        margin-bottom: 10px;
-        margin-top: -15px;
-    }
-    
-    div.parent section .car-pic {
-        position: relative !important;
-        z-index: 3;
-        margin: 0 auto !important;
-        width: 100% !important;
-        max-width: 260px !important;
-        text-align: center !important;
-        top: 0 !important;
-        right: 0 !important;
-        left: 0 !important;
-        transform: none !important;
-        touch-action: pan-y pinch-zoom;
-    }
-    
-    div.parent section .car-pic .swiper-container {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        touch-action: pan-y pinch-zoom;
-        cursor: grab;
-    }
+        // Sync both swipers
+        swiperImages.controller.control = swiperDetails;
+        swiperDetails.controller.control = swiperImages;
 
-    div.parent section .car-pic .swiper-container:active {
-        cursor: grabbing;
-    }
+        // Make sure swiping left on touch replicates clicking left button
+        // and swiping right replicates clicking right button
+        // This is already handled by Swiper's built-in touch events
+    </script>
     
-    div.parent section .car-pic .swiper-wrapper {
-        width: 100%;
-    }
-    
-    div.parent section .car-pic .swiper-slide {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    div.parent section .car-pic img {
-        width: 100% !important;
-        max-width: 260px !important;
-        height: auto !important;
-        margin: 0 auto !important;
-        display: block !important;
-        background: transparent !important;
-        box-shadow: none !important;
-        border: none !important;
-        position: relative !important;
-        user-select: none;
-        -webkit-user-drag: none;
-    }
-    
-    /* ORDER 2: Slider Buttons - Right Under Image */
-    div.parent section .navigate {
-        position: relative !important;
-        z-index: 3;
-        display: flex !important;
-        justify-content: center !important;
-        gap: 18px !important;
-        margin: 10px auto 12px !important;
-        order: 2;
-        float: none !important;
-        width: 100% !important;
-        left: 0 !important;
-        right: 0 !important;
-    }
-    
-    div.parent section .navigate button {
-        color: #fff;
-        font-size: 12px;
-        height: 44px !important;
-        width: 44px !important;
-        border-radius: 50%;
-        background-color: #4b4c68;
-        border: 1px solid #4b4c68;
-        cursor: pointer;
-        transition: all 250ms ease-in-out;
-        margin: 0 !important;
-        margin-left: 0 !important;
-        flex-shrink: 0;
-        position: static !important;
-    }
-    
-    div.parent section .navigate button:hover {
-        color: #d71758;
-        background-color: #fff;
-    }
-    
-    div.parent section .navigate .swiper-button-next,
-    div.parent section .navigate .swiper-button-prev {
-        background-image: none !important;
-        position: static !important;
-        margin: 0 !important;
-        margin-top: 0 !important;
-        height: inherit !important;
-        top: 0 !important;
-    }
-    
-    /* ORDER 3: Car Details - HIGHER POSITION */
-    div.parent section .grid-45 {
-        order: 3;
-        width: 100%;
-        margin: 0;
-        margin-top: -5px;
-    }
-    
-    div.parent section .car-details {
-        position: relative !important;
-        z-index: 2;
-        margin: 0 auto !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        top: 0 !important;
-    }
-    
-    div.parent section .car-details .swiper-container {
-        margin: 0;
-        padding: 0;
-        touch-action: pan-y pinch-zoom;
-        cursor: grab;
-    }
-
-    div.parent section .car-details .swiper-container:active {
-        cursor: grabbing;
-    }
-    
-    /* Car Name */
-    div.parent section .car-details h1.name {
-        font-size: 26px;
-        font-family: 'DM Serif Display', serif;
-        font-weight: 600;
-        text-transform: capitalize;
-        margin-bottom: 12px;
-        margin-top: 0;
-        line-height: 1.1;
-        color: #d71758;
-    }
-    
-    div.parent section .car-details h1.name span {
-        font-size: 38px;
-        color: #fff;
-        display: block;
-    }
-    
-    /* Car Description */
-    div.parent section .car-details p.about {
-        font-size: 11px;
-        color: #fff;
-        font-family: 'Open Sans', sans-serif;
-        line-height: 1.5;
-        margin: 0 auto 12px;
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-    }
-    
-    /* Production Year */
-    div.parent section .car-details h4.production-year {
-        font-size: 11px;
-        font-family: 'Mada', sans-serif;
-        line-height: 1.4;
-        color: rgba(255, 255, 255, 0.50);
-        margin-bottom: 12px;
-    }
-    
-    div.parent section .car-details h4.production-year span {
-        font-size: 15px;
-        font-weight: 600;
-        color: #fff;
-        display: block;
-        margin-top: 4px;
-    }
-    
-    /* Discover Button */
-    div.parent section .car-details a.btn-discover {
-        background-color: #d71758;
-        border: 2px solid #fea500;
-        padding: 8px 12px 8px 18px;
-        border-radius: 30px;
-        font-family: 'Mada', sans-serif;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 10px;
-        letter-spacing: 2px;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        margin-bottom: 15px;
-        transition: all 0.3s ease;
-    }
-    
-    div.parent section .car-details a.btn-discover span {
-        padding-right: 3px;
-        position: relative;
-    }
-    
-    div.parent section .car-details a.btn-discover i {
-        position: relative;
-    }
-    
-    div.parent section .car-details a.btn-discover:after {
-        content: "";
-        height: 24px;
-        width: 24px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.20);
-        border: 2px solid #fff;
-    }
-    
-    div.parent section .car-details a.btn-discover:hover span {
-        animation: anim-btn-discover-text 250ms linear forwards;
-    }
-    
-    div.parent section .car-details a.btn-discover:hover i {
-        animation: anim-btn-discover-icon 250ms linear forwards;
-    }
-    
-    div.parent section .car-details a.btn-discover:hover:after {
-        animation: anim-btn-discover-after 250ms linear forwards;
-    }
-    
-    @keyframes anim-btn-discover-text {
-        from { left: 0px; }
-        to { left: 8px; }
-    }
-    
-    @keyframes anim-btn-discover-icon {
-        from { left: 0px; }
-        to { left: 18px; transform: scale(1.6, 1.6); color: #d71758; }
-    }
-    
-    @keyframes anim-btn-discover-after {
-        from { background-color: rgba(255, 255, 255, 0.20); }
-        to { background-color: #fff; }
-    }
-    
-    /* Stripes - MUCH HIGHER POSITION */
-    div.parent .stripe {
-        height: 35px !important;
-        position: absolute !important;
-        background-color: #fea500 !important;
-        bottom: 150px !important;
-        left: 0 !important;
-        z-index: 0 !important;
-    }
-    
-    div.parent .one {
-        width: 120%;
-        transform: rotate(145deg);
-    }
-    
-    div.parent .two {
-        width: 145%;
-        transform: rotate(145deg);
-    }
-    
-    /* Grid Override */
-    [class*="grid-"] {
-        width: 100% !important;
-        float: none !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        position: static !important;
-    }
-}
-
-/* =============================
-   SMALL MOBILE (up to 480px)
-============================= */
-
-@media only screen and (max-width: 480px) {
-    div.parent {
-        background-position: 60% top;
-        background-size: 200%;
-    }
-    
-    div.parent section .car-pic {
-        max-width: 240px !important;
-    }
-    
-    div.parent section .car-pic img {
-        max-width: 240px !important;
-    }
-
-    div.parent section span.year {
-        font-size: 4.5em !important;
-        bottom: 140px !important;
-    }
-}
-
-/* =============================
-   EXTRA SMALL MOBILE (up to 375px)
-============================= */
-
-@media only screen and (max-width: 375px) {
-    div.parent {
-        background-position: 65% top;
-        background-size: 220%;
-    }
-    
-    .grid-container {
-        padding: 0 15px;
-    }
-    
-    div.parent header a.logo {
-        font-size: 18px;
-    }
-    
-    div.parent header ul.social-icons {
-        gap: 8px;
-    }
-    
-    div.parent header ul.social-icons li a {
-        height: 36px;
-        width: 36px;
-        font-size: 12px;
-    }
-    
-    div.parent header ul.navigation {
-        gap: 12px;
-    }
-    
-    div.parent header ul.navigation li a {
-        font-size: 11px;
-        padding: 5px 8px;
-    }
-    
-    div.parent section .car-pic {
-        max-width: 220px !important;
-    }
-    
-    div.parent section .car-pic img {
-        max-width: 220px !important;
-    }
-    
-    div.parent section .navigate button {
-        height: 42px !important;
-        width: 42px !important;
-    }
-    
-    div.parent section .car-details h1.name {
-        font-size: 24px;
-    }
-    
-    div.parent section .car-details h1.name span {
-        font-size: 36px;
-    }
-
-    div.parent section span.year {
-        font-size: 4em !important;
-        bottom: 130px !important;
-    }
-}
-
-/* =============================
-   TINY MOBILE (up to 320px)
-============================= */
-
-@media only screen and (max-width: 320px) {
-    div.parent {
-        background-position: 70% top;
-        background-size: 250%;
-    }
-    
-    .grid-container {
-        padding: 0 12px;
-    }
-    
-    div.parent section .car-pic {
-        max-width: 200px !important;
-    }
-    
-    div.parent section .car-pic img {
-        max-width: 200px !important;
-    }
-
-    div.parent section span.year {
-        font-size: 3.5em !important;
-        bottom: 120px !important;
-    }
-}
-
-/* =============================
-   SWIPER TOUCH INTERACTION FIX
-============================= */
-
-@media only screen and (max-width: 1023px) {
-    .swiper-container {
-        width: 100% !important;
-        max-width: 100% !important;
-        overflow: hidden !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        position: relative !important;
-        /* Enable touch sliding */
-        touch-action: pan-y pinch-zoom !important;
-    }
-    
-    .swiper-wrapper {
-        width: 100% !important;
-        display: flex !important;
-        position: relative !important;
-    }
-    
-    .swiper-slide {
-        width: 100% !important;
-        flex-shrink: 0 !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-}
-
-/* =============================
-   PREVENT OVERFLOW
-============================= */
-
-@media only screen and (max-width: 1023px) {
-    img {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-    
-    * {
-        max-width: 100%;
-    }
-    
-    .grid-container,
-    div.parent header .grid-container,
-    div.parent section .grid-container {
-        overflow-x: hidden !important;
-        max-width: 100% !important;
-    }
-}
-
-/* =============================
-   REMOVE YELLOW BACKGROUND
-============================= */
-
-@media only screen and (max-width: 1023px) {
-    /* Remove any yellow backgrounds on images or containers */
-    img,
-    div.parent section .car-pic,
-    div.parent section .car-pic img,
-    div.parent section .car-pic .swiper-slide,
-    .swiper-slide {
-        background: transparent !important;
-        background-color: transparent !important;
-    }
-}
-
-/* =============================
-   ACCESSIBILITY
-============================= */
-
-@media only screen and (max-width: 767px) {
-    button:focus,
-    a:focus {
-        outline: 2px solid #fea500;
-        outline-offset: 2px;
-    }
-}
+</body>
+</html>
