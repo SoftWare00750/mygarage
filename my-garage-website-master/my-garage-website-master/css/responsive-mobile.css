@@ -1,13 +1,13 @@
 /* =============================
-   MOBILE & TABLET RESPONSIVE CSS
-   (Desktop uses original style.css)
+   MOBILE & TABLET ONLY RESPONSIVE CSS
+   Desktop (1024px+) NOT affected - uses original style.css
 ============================= */
 
 /* =============================
-   TABLET (768px - 1023px)
+   TABLET ONLY (768px - 1023px)
 ============================= */
 
-@media (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Prevent horizontal scroll */
     body {
         overflow-x: hidden;
@@ -200,10 +200,10 @@
 }
 
 /* =============================
-   MOBILE (up to 767px)
+   MOBILE ONLY (up to 767px)
 ============================= */
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     /* Prevent horizontal scroll */
     * {
         max-width: 100%;
@@ -430,13 +430,25 @@
         height: 50px;
         bottom: 100px;
     }
+    
+    /* Fix for grid system on mobile */
+    .grid-5, .grid-10, .grid-15, .grid-20, .grid-25, 
+    .grid-30, .grid-35, .grid-40, .grid-45, .grid-50, 
+    .grid-55, .grid-60, .grid-65, .grid-70, .grid-75, 
+    .grid-80, .grid-85, .grid-90, .grid-95, .grid-100 {
+        width: 100% !important;
+        float: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        clear: both;
+    }
 }
 
 /* =============================
    SMALL MOBILE (up to 480px)
 ============================= */
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     div.parent {
         background-position: 60% top;
         background-size: 200%;
@@ -545,7 +557,7 @@
    EXTRA SMALL MOBILE (up to 375px)
 ============================= */
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     div.parent {
         background-position: 65% top;
         background-size: 220%;
@@ -604,7 +616,7 @@
    TINY MOBILE (up to 320px)
 ============================= */
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
     div.parent {
         background-position: 70% top;
         background-size: 250%;
@@ -665,7 +677,7 @@
    MOBILE LANDSCAPE
 ============================= */
 
-@media (max-width: 767px) and (max-height: 500px) and (orientation: landscape) {
+@media only screen and (max-width: 767px) and (max-height: 500px) and (orientation: landscape) {
     div.parent {
         min-height: auto;
         background-position: center center;
@@ -743,22 +755,5 @@
     div.parent .stripe {
         height: 30px;
         bottom: 50px;
-    }
-}
-
-/* =============================
-   FIX FOR GRID SYSTEM ON MOBILE
-============================= */
-
-@media (max-width: 767px) {
-    .grid-5, .grid-10, .grid-15, .grid-20, .grid-25, 
-    .grid-30, .grid-35, .grid-40, .grid-45, .grid-50, 
-    .grid-55, .grid-60, .grid-65, .grid-70, .grid-75, 
-    .grid-80, .grid-85, .grid-90, .grid-95, .grid-100 {
-        width: 100%;
-        float: none;
-        padding-left: 0;
-        padding-right: 0;
-        clear: both;
     }
 }
