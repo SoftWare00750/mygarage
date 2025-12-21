@@ -292,17 +292,15 @@
         content: none !important;
     }
     
-    /* ========== SECTION - MOVED MUCH HIGHER ========== */
+    /* ========== SECTION - MOVED HIGHER ========== */
     div.parent section {
-        position: relative !important;
-        padding: 0 !important;
-        padding-top: 120px !important;
-        padding-bottom: 30px !important;
-        text-align: center !important;
-        width: 100% !important;
-        overflow: hidden !important;
-        min-height: auto !important;
-        margin-top: 0 !important;
+        position: relative;
+        padding: 5px 0 40px;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+        min-height: auto;
+        margin-top: -10px;
     }
     
     div.parent section .grid-container {
@@ -324,19 +322,19 @@
         position: static !important;
     }
     
-    /* Year Background - MUCH HIGHER POSITION */
+    /* Year Background - HIGHER POSITION */
     div.parent section span.year {
-        font-size: 5em !important;
-        font-weight: 600 !important;
-        font-family: 'DM Serif Display', serif !important;
-        position: absolute !important;
-        bottom: 150px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        color: #22234a !important;
-        z-index: 1 !important;
-        opacity: 0.4 !important;
-        margin: 0 !important;
+        font-size: 5em;
+        font-weight: 600;
+        font-family: 'DM Serif Display', serif;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #22234a;
+        z-index: 1;
+        opacity: 0.4;
+        margin: 0;
     }
     
     /* ORDER 1: Car Image - Centered and Higher */
@@ -584,14 +582,14 @@
         to { background-color: #fff; }
     }
     
-    /* Stripes - MUCH HIGHER POSITION */
+    /* Stripes - HIGHER POSITION */
     div.parent .stripe {
-        height: 35px !important;
-        position: absolute !important;
-        background-color: #fea500 !important;
-        bottom: 150px !important;
-        left: 0 !important;
-        z-index: 0 !important;
+        height: 35px;
+        position: absolute;
+        background-color: #fea500;
+        bottom: 90px;
+        left: 0;
+        z-index: 0;
     }
     
     div.parent .one {
@@ -635,8 +633,8 @@
     }
 
     div.parent section span.year {
-        font-size: 4.5em !important;
-        bottom: 140px !important;
+        font-size: 4.5em;
+        bottom: 75px;
     }
 }
 
@@ -699,8 +697,8 @@
     }
 
     div.parent section span.year {
-        font-size: 4em !important;
-        bottom: 130px !important;
+        font-size: 4em;
+        bottom: 70px;
     }
 }
 
@@ -727,8 +725,8 @@
     }
 
     div.parent section span.year {
-        font-size: 3.5em !important;
-        bottom: 120px !important;
+        font-size: 3.5em;
+        bottom: 65px;
     }
 }
 
