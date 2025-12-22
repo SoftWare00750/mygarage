@@ -328,12 +328,12 @@
     
     /* Year Background - MUCH HIGHER POSITION */
     div.parent section span.year {
-        font-size: 27em !important;
+        font-size: 100em !important;
         font-weight: 600 !important;
         font-family: 'DM Serif Display', serif !important;
         position: absolute !important;
-        bottom: 50px !important;
-        left: 20% !important;
+        bottom: 200px !important;
+        left: 10% !important;
         transform: translateX(50%) !important;
         color: #22234a !important;
         z-index: 1 !important;
