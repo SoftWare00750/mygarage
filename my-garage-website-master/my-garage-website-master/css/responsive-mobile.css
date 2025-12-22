@@ -449,22 +449,22 @@
     }
     
     /* ORDER 3: Car Details - HIGHER POSITION */
-    div.parent section .grid-45 {
-        order: 3;
-        width: 100%;
-        margin: 0;
-        margin-top: -10px;
-    }
-    
-    div.parent section .car-details {
-        position: relative !important;
-        z-index: 2;
-        margin: 0 auto !important;
-        margin-top: -10px;
-        width: 100% !important;
-        max-width: 100% !important;
-        top: 0 !important;
-    }
+div.parent section .grid-45 {
+    order: 3;
+    width: 100%;
+    margin: 0;
+    margin-top: -30px;    /* ← CHANGED from -10px */
+}
+
+div.parent section .car-details {
+    position: relative !important;
+    z-index: 2;
+    margin: 0 auto !important;
+    margin-top: 0;        /* ← CHANGED from -10px */
+    width: 100% !important;
+    max-width: 100% !important;
+    top: 0 !important;
+}
     
     div.parent section .car-details .swiper-container {
         margin: 0;
