@@ -498,7 +498,7 @@
     
     /* Car Description */
     div.parent section .car-details p.about {
-       position: relative;
+       position: static;
        font-size: 11px;
         color: #fff;
         font-family: 'Open Sans', sans-serif;
