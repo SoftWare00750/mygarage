@@ -502,7 +502,7 @@
         font-family: 'Open Sans', sans-serif;
         line-height: 1.5;
         margin: 0 auto 12px;
-        margin-top: -1px;
+        margin-top: -5px;
         width: 100%;
         max-width: 100%;
         padding: 0;
@@ -556,8 +556,8 @@
     
     div.parent section .car-details a.btn-discover:after {
         content: "";
-        height: 24px;
-        width: 24px;
+        height: 20px;
+        width: 20px;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.20);
         border: 2px solid #fff;
@@ -592,7 +592,7 @@
     
     /* Stripes - MUCH HIGHER POSITION */
     div.parent .stripe {
-        height: 44px !important;
+        height: 50px !important;
         position: absolute !important;
         background-color: #fea500 !important;
         bottom: 300px !important;
