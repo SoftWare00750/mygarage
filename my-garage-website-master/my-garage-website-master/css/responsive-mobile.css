@@ -153,14 +153,14 @@
     
     /* Logo - Left */
     div.parent header .grid-20:first-child {
-        width: 4px !important;
+        width: 20px !important;
         flex: 0 0 auto !important;
         text-align: left !important;
         order: 1 !important;
         padding: 0 !important;
-        margin: 70px !important;
+        margin: -20px !important;
         float: none !important;
-        margin-right: -15px;
+        margin-right: 15px;
     }
     
     div.parent header a.logo {
