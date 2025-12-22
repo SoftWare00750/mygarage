@@ -453,13 +453,14 @@
         order: 3;
         width: 100%;
         margin: 0;
-        margin-top: -2px;
+        margin-top: -10px;
     }
     
     div.parent section .car-details {
         position: relative !important;
         z-index: 2;
         margin: 0 auto !important;
+        margin-top: -10px;
         width: 100% !important;
         max-width: 100% !important;
         top: 0 !important;
