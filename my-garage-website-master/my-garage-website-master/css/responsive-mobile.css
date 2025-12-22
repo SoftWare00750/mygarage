@@ -333,7 +333,7 @@
         font-family: 'DM Serif Display', serif !important;
         position: absolute !important;
         top: 30px;
-        bottom: 200px !important;
+        bottom: 10px !important;
         left: 10% !important;
         transform: translateX(50%) !important;
         color: #22234a !important;
@@ -502,7 +502,7 @@
         font-family: 'Open Sans', sans-serif;
         line-height: 1.5;
         margin: 0 auto 12px;
-        margin-top: -5px;
+        margin-top: -12px;
         width: 100%;
         max-width: 100%;
         padding: 0;
@@ -522,7 +522,7 @@
         font-weight: 600;
         color: #fff;
         display: block;
-        margin-top: -6px;
+        margin-top: 6px;
     }
     
     /* Discover Button */
@@ -595,7 +595,7 @@
         height: 35px !important;
         position: absolute !important;
         background-color: #fea500 !important;
-        bottom: 400px !important;
+        bottom: 300px !important;
         left: 0 !important;
         z-index: 0 !important;
     }
