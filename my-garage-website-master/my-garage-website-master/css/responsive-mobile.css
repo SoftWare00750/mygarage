@@ -483,7 +483,7 @@
         font-family: 'DM Serif Display', serif;
         font-weight: 600;
         text-transform: capitalize;
-        margin-bottom: 9px;
+        margin-bottom: 0px;
         margin-top: 0;
         line-height: 1.1;
         color: #d71758;
@@ -592,7 +592,7 @@
     
     /* Stripes - MUCH HIGHER POSITION */
     div.parent .stripe {
-        height: 80px !important;
+        height: 40px !important;
         position: absolute !important;
         background-color: #fea500 !important;
         bottom: 300px !important;
