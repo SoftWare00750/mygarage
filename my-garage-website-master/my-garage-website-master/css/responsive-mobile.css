@@ -483,9 +483,9 @@
     font-family: 'DM Serif Display', serif;
     font-weight: 600;
     text-transform: capitalize;
-    margin-bottom: 0;    /* ← CHANGED FROM -15px */
+    margin-bottom: 0;
     margin-top: 0;
-    line-height: 1.1;
+    line-height: 1;         /* ← CHANGED from 1.1 */
     color: #d71758;
 }
 
@@ -493,17 +493,19 @@ div.parent section .car-details h1.name span {
     font-size: 38px;
     color: #fff;
     display: block;
-    margin-bottom: 0;    /* ← CHANGED FROM -2 */
+    margin-bottom: 0;
+    margin-top: -5px;       /* ← ADD THIS LINE */
+    line-height: 1;         /* ← ADD THIS LINE */
 }
     
     /* Car Description */
-    div.parent section .car-details p.about {
+   div.parent section .car-details p.about {
    position: static;
    font-size: 11px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    margin-top: 5px;    /* ← CHANGED FROM -30px */
+    margin-top: -8px;      /* ← CHANGED from -30px */
     width: 100%;
     max-width: 100%;
     padding: 0;
