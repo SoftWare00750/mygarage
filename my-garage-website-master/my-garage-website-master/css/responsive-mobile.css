@@ -153,13 +153,14 @@
     
     /* Logo - Left */
     div.parent header .grid-20:first-child {
-        width: auto !important;
+        width: 190px !important;
         flex: 0 0 auto !important;
         text-align: left !important;
         order: 1 !important;
         padding: 0 !important;
-        margin: 0 !important;
+        margin: -20px !important;
         float: none !important;
+        margin-right: 15px;
     }
     
     div.parent header a.logo {
@@ -230,6 +231,7 @@
         width: 100% !important;
         order: 3 !important;
         margin-top: 12px !important;
+        margin-left: 6px;
         padding: 0 !important;
         float: none !important;
     }
@@ -246,7 +248,7 @@
         justify-content: center !important;
         align-items: center !important;
         flex-wrap: nowrap !important;
-        gap: 15px !important;
+        gap: 8px !important;
         margin: 0 !important;
         margin-top: 0 !important;
         padding: 0 !important;
@@ -276,7 +278,7 @@
         color: rgba(255, 255, 255, 0.60) !important;
         text-transform: capitalize !important;
         font-family: 'Fira Sans', sans-serif !important;
-        font-size: 12px !important;
+        font-size: 11px !important;
         padding: 6px 10px !important;
         text-decoration: none !important;
         white-space: nowrap !important;
@@ -326,13 +328,13 @@
     
     /* Year Background - MUCH HIGHER POSITION */
     div.parent section span.year {
-        font-size: 5em !important;
+        font-size: 100px !important;
         font-weight: 600 !important;
         font-family: 'DM Serif Display', serif !important;
         position: absolute !important;
-        bottom: 150px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
+        bottom: 30px !important;
+        left: 10% !important;
+        transform: translateX(50%) !important;
         color: #22234a !important;
         z-index: 1 !important;
         opacity: 0.4 !important;
@@ -363,6 +365,7 @@
     
     div.parent section .car-pic .swiper-container {
         width: 100% !important;
+        
         max-width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
@@ -409,7 +412,7 @@
         margin: 10px auto 12px !important;
         order: 2;
         float: none !important;
-        width: 100% !important;
+        width: 50% !important;
         left: 0 !important;
         right: 0 !important;
     }
@@ -417,8 +420,8 @@
     div.parent section .navigate button {
         color: #fff;
         font-size: 12px;
-        height: 44px !important;
-        width: 44px !important;
+        height: 50px !important;
+        width: 30px !important;
         border-radius: 50%;
         background-color: #4b4c68;
         border: 1px solid #4b4c68;
@@ -450,13 +453,14 @@
         order: 3;
         width: 100%;
         margin: 0;
-        margin-top: -5px;
+        margin-top: -10px;
     }
     
     div.parent section .car-details {
         position: relative !important;
         z-index: 2;
         margin: 0 auto !important;
+        margin-top: -10px;
         width: 100% !important;
         max-width: 100% !important;
         top: 0 !important;
@@ -479,7 +483,7 @@
         font-family: 'DM Serif Display', serif;
         font-weight: 600;
         text-transform: capitalize;
-        margin-bottom: 12px;
+        margin-bottom: -15px;
         margin-top: 0;
         line-height: 1.1;
         color: #d71758;
@@ -489,15 +493,18 @@
         font-size: 38px;
         color: #fff;
         display: block;
+        margin-bottom: -2;
     }
     
     /* Car Description */
     div.parent section .car-details p.about {
-        font-size: 11px;
+       position: static;
+       font-size: 11px;
         color: #fff;
         font-family: 'Open Sans', sans-serif;
         line-height: 1.5;
-        margin: 0 auto 12px;
+        margin-top: -30px;
+        border-top: 20px;
         width: 100%;
         max-width: 100%;
         padding: 0;
@@ -505,11 +512,11 @@
     
     /* Production Year */
     div.parent section .car-details h4.production-year {
-        font-size: 11px;
-        font-family: 'Mada', sans-serif;
+        font-size: 10px;
+        font-family: sans-serif;
         line-height: 1.4;
-        color: rgba(255, 255, 255, 0.50);
-        margin-bottom: 12px;
+        color: #d71758;
+        margin-bottom: 19px;
     }
     
     div.parent section .car-details h4.production-year span {
@@ -517,15 +524,15 @@
         font-weight: 600;
         color: #fff;
         display: block;
-        margin-top: 4px;
+        margin-top: 6px;
     }
     
     /* Discover Button */
     div.parent section .car-details a.btn-discover {
         background-color: #d71758;
         border: 2px solid #fea500;
-        padding: 8px 12px 8px 18px;
-        border-radius: 30px;
+        padding: 7px 11px 7px 17px;
+        border-radius: 20px;
         font-family: 'Mada', sans-serif;
         text-decoration: none;
         text-transform: uppercase;
@@ -535,7 +542,8 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        margin-bottom: 15px;
+        margin-bottom: 13px;
+        margin-top: 10px;
         transition: all 0.3s ease;
     }
     
@@ -550,8 +558,8 @@
     
     div.parent section .car-details a.btn-discover:after {
         content: "";
-        height: 24px;
-        width: 24px;
+        height: 20px;
+        width: 20px;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.20);
         border: 2px solid #fff;
@@ -586,14 +594,14 @@
     
     /* Stripes - MUCH HIGHER POSITION */
     div.parent .stripe {
-        height: 35px !important;
+        height: 50px !important;
         position: absolute !important;
         background-color: #fea500 !important;
-        bottom: 150px !important;
+        bottom: 300px !important;
         left: 0 !important;
         z-index: 0 !important;
     }
-    
+        
     div.parent .one {
         width: 120%;
         transform: rotate(145deg);
